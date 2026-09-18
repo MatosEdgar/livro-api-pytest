@@ -16,6 +16,7 @@ API RESTful desenvolvida em Python utilizando FastAPI, SQLAlchemy e MySQL, com c
 
 ## 📁 Estrutura do Projeto
 
+```text
 livro-api-pytest/
 │
 ├── app/
@@ -35,36 +36,34 @@ livro-api-pytest/
 ├── requirements.txt      # Lista de dependências do projeto
 └── README.md             # Documentação do projeto
 
----
-
 ## 🚀 Como Executar o Projeto
 
-1. Clone o repositório:
-git clone https://github.com/SEU-USUARIO/livro-api-pytest.git
+1. **Clone o repositório:**
+```bash
+git clone [https://github.com/MatosEdgar/livro-api-pytest.git](https://github.com/MatosEdgar/livro-api-pytest.git)
 cd livro-api-pytest
 
-2. Crie e ative o ambiente virtual:
+2. **Crie e ative o ambiente virtual:**
+```bash
 python -m venv venv
-* Windows: .\venv\Scripts\activate
-* Linux/macOS: source venv/bin/activate
 
-3. Instale as dependências:
+3. **Instale as dependências:**
+```bash
 pip install -r requirements.txt
 playwright install
 
-4. Configure o Banco de Dados:
-Ajuste a senha no arquivo app/database.py de acordo com suas credenciais do MySQL e crie o banco no MySQL Workbench:
+4. **Configure o Banco de Dados:**
+Ajuste a senha no arquivo `app/database.py` de acordo com suas credenciais do MySQL e crie o banco no MySQL Workbench:
+```sql
 CREATE DATABASE IF NOT EXISTS livros_db;
 
-5. Inicie a aplicação:
+5. **Inicie a aplicação:**
+```bash
 uvicorn app.main:app --reload
-
-Acesse a documentação interativa em: http://127.0.0.1:8000/docs
-
----
 
 ## 🧪 Executando os Testes
 
 Com a API rodando em um terminal, abra outro terminal e execute:
 
+```bash
 pytest -v
