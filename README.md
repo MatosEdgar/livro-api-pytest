@@ -71,7 +71,7 @@ CREATE DATABASE IF NOT EXISTS livros_db;
 uvicorn app.main:app --reload
 ```
 
-Acesse a documentação interativa em: `[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)`
+Acesse a [Documentação Interativa (Swagger UI)](http://127.0.0.1:8000/docs)`
 
 ---
 
